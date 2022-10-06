@@ -49,5 +49,28 @@ out.innerHTML = "correct: " + correct + " " + "wrong: " + wrong
 }
 }
 </script>
+<div class="container">
+
+    <img  class="img-fluid" src="plan.jpg" alt="" width="100px" height="100px" id="images" onclick="swapImage()">
+</div>
+<script>
+    let useImage = 1
+    function swapImage(){
+    switch(useImage){
+        case 1:
+            document.getElementById("images").src="plan.jpg";
+            useImage+=1;
+            break;
+            case 2:
+            document.getElementById("images").src="leaf.jpg";
+            useImage+=1;
+            break;
+            case 3:
+            document.getElementById("images").src="antrs.jpg";
+            useImage=1;
+            break;
+        }
+    }
+</script> 
 </body>
 </html> 
